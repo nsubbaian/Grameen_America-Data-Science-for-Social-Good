@@ -1455,7 +1455,27 @@ input, select, textarea {
 		text-align: center;
 		padding: 3em 0 3em 0;
 	}
+	header.style1a {
+		text-align: center;
+		padding: 0em 0 0em 0;
+	}
 
+	header.style1a h2 {
+		font-weight: 700;
+		font-size: 2em;
+		letter-spacing: 0.075em;
+		/* line-height: 1.5em; */
+		margin: 0 0 0 0;
+	}
+
+	header.style1a p {
+		color: #b1b4b9;
+		display: block;
+		/* margin: 1.15em 0 0 0; */
+		font-size: 1.3em;
+		letter-spacing: 0.075em;
+		/* line-height: 1.5em; */
+	}
 		header.style1 h2 {
 			font-weight: 700;
 			font-size: 2em;
