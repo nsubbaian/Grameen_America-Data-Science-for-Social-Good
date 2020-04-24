@@ -4,6 +4,7 @@ import dash
 import dash_core_components as dcc
 import dash_html_components as html
 
+
 def renameCols(df):
     df.rename(columns={
         'Not including your children under 18, how many other family members live with you (including spouse/partner, parents, etc.)': 'Amt_AdultsinFamily',
@@ -65,7 +66,7 @@ map.update_geos(
     scope="north america",
     showcountries=True, countrycolor="White",
 )
-map.update_layout(title='Grameen Branches', title_x=0.5, height=390, margin=dict(l=0, r=0, b=10, t=40, pad=0))
+map.update_layout(title='Grameen America Branches', title_x=0.5, height=390, margin=dict(l=0, r=0, b=10, t=40, pad=0))
 
 hist = go.Figure(go.Histogram())
 hist.update_layout(title_x=0.5, height=400, margin=dict(b=10, t=40, pad=0))
