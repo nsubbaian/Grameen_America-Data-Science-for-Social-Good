@@ -10,6 +10,25 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+
+		<script>
+		(function(d){
+		 var iframe = d.body.appendChild(d.createElement('iframe')),
+		 doc = iframe.contentWindow.document;
+
+		 // style the iframe with some CSS
+		 iframe.style.cssText = "position:absolute;width:1200px;height:2000px;left:0px;";
+
+		 doc.open().write('<body onload="' +
+		 'var d = document;d.getElementsByTagName(\'head\')[0].' +
+		 'appendChild(d.createElement(\'script\')).src' +
+		 '=\'\/path\/to\/file\'">');
+
+		 doc.close(); //iframe onload event happens
+
+		 })(document);
+		</script>
+
 	</head>
 	<body class="no-sidebar is-preload">
 		<div id="page-wrapper">
@@ -57,7 +76,7 @@
 									odio eleifend. Duis commodo fringilla commodo. Aliquam erat volutpat. Vestibulum
 									facilisis leo magna. Cras sit amet urna eros, id egestas urna. Quisque aliquam
 									tempus euismod. Vestibulum ante ipsum primis in faucibus.</p>
-									<iframe  width="1300" height="2000" src="https://mapwidget.herokuapp.com/" seamless></iframe> -->
+									<iframe  width="1200" height="2000" src="https://mapwidget.herokuapp.com/" seamless></iframe> -->
 
 								</article>
 							</div>
