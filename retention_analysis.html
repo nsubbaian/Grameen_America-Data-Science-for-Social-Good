@@ -133,10 +133,9 @@
 
 									</header>
 
-								<span style="margin-left: 80px" style="color:black"><b style="color:#64caa8">Metric 1:</b> Person is considered retained if they have a previously closed loan account OR closed loan
-								<br><br></span>
-									<span style="margin-left: 80px" style="color:black"><b style="color:#64caa8">Metric 2:</b>  Person is considered retained if they have more than 2 completed cycles<br><br> </span>
-									<span style="margin-left: 80px" style="color:black"><b style="color:#64caa8">Metric 3:</b> There are 3 categories of retention/experience that a person can fall under. <br></span>
+								<span style="margin-left: 80px" style="color:black"><b style="color:#64caa8">Metric 1:</b> Member is considered not retained if their last loan account is closed and they have not opened a new account within 3 months of their loan end date  (binary category)<br><br></span>
+									<span style="margin-left: 80px" style="color:black"><b style="color:#64caa8">Metric 2:</b>  Member is considered retained if they have more than 2 completed cycles (binary category)<br><br> </span>
+									<span style="margin-left: 80px" style="color:black"><b style="color:#64caa8">Metric 3:</b> There are 3 categories of retention/experience that a member can fall under: <br></span>
 
 									<span style="margin-left: 160px" style="color:black">1.  No Retention --> 0-2 completed loan cycles (~41% of members) <br></span>
 									 <span style="margin-left: 160px" style="color:black">2.  Retention --> 3-9 completed loan cycles (~43% of members)<br></span>
@@ -149,10 +148,10 @@
 						     <!-- <div id="includedContent"></div> -->
 								 <header margin-bottom: 0;  padding-bottom: 0px; class="style1">
 								 <p > From our analysis of the above retention metrics, we chose metric 3. In general, Metric 1 produced differing results or no trends, while Metric 2 and 3 produced similar results.
-								 As Retention 3 showed levels of retention, we decided to use metric 3 for the rest of our analysis.</p>
+								 Retention metric 3 had three levels of retention, based on the total number of loan cycles a member has. Because Retention materic 3 showed “levels” of retention, we decided to use metric 3 for the rest of our analysis.</p>
 							 </header>
 							 <header margin-bottom: 0;  padding-bottom: 0px; class="style1">
-							 	<h2>Feature Importance Analysis</h2>
+							 	<h2>Feature Importance Analysis </h2>
 								<p > From a feature importance analysis using XGboost and Random Forest Models we found out that the variable  "running a business before grameen" had a huge
 								feature importance compared to the other features. In other words, whether or not the participants ran a business before coming to Grameen, was a key indicator
 							in predicting their retention. Shown bellow are two pie charts, one for those who answered "Yes" to running a business before Grameen and one for those
@@ -161,6 +160,16 @@
 
 
 								 <img  width="1200" height="400" src="images/piecharts.png" alt="" class = "center" />
+
+								 <header margin-bottom: 0;  padding-bottom: 0px; class="style1">
+									<h2><br><br>Housing Cost</h2>
+									<p > Another way of interpreting housing is through housing cost. This following histogram shows distribution
+										of Grameen America member housing costs grouped by retention 3 metrics. Members categorized as no retention
+										 concentrated towards the $1001-1200 range. </p>
+								</header>
+
+								<iframe  width="1200" height="500" src="retention3_housing.html" seamless></iframe>
+
 
 								 <header margin-bottom: 0;  padding-bottom: 0px; class="style1">
 									<h2><br><br>Housing Situation</h2>
