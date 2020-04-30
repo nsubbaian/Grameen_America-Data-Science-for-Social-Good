@@ -60,21 +60,27 @@
 							<div id="content">
 								<article class="box post">
 									<header class="style1">
-										<p>Grameen America works to provide loans for women entrepreneurs who want to grow their business.
-											The participants in the program can choose to stay as long as they want, incrementally asking for higher loans as they pay them back.
-											Grameen America would like to determine the variables that help predict which participants stay with them longer.
+										<p><b>Grameen America</b> works to provide <b>loans for women entrepreneurs</b>who want to grow their business.</br>
+											The members of the program can choose to <b>stay as long as they want</b>,</br>
+											incrementally asking for <b>higher loans</b> as they pay them back.</br>
+											<br>
+											Grameen America would like to determine the <b>variables</b> that help predict</br>
+											which members <b>stay with them longer</b>.
 										 </p>
 										 <br>
+										 <br>
+										 <br>
 										<h2>What variables help explain retention?</h2>
-										<p>All participants in Grameen America were asked to take a Questionnaire before and after receiving their loans.
-											All this data was integrated into a dataset which was analyzed to understand if there were certain
-											variables that affected retention more than others. <br> <br>
-											Shown bellow is the information included in the dataset as well as how retention was defined.
+										<p>All members of Grameen America were asked to take a <b>Questionnaire</b> before and after receiving their loans.</br>
+											All this data was integrated into a <b>dataset</b> which was analyzed to understand if there were</br>
+											<b>certain variables</b> that affected <b>retention</b> more than others.</br>
+											<br> <br>
+											<i>Shown below is the information included in the dataset as well as how retention was defined.</i>
 										 </p>
 									</header>
 									<section id="features">
 										<header margin-bottom: 0;  padding-bottom: 0px; class="style1">
-											<h2>Grameen America Data Set: Collected Information</h2>
+											<h2>Grameen America Dataset: Collected Information</h2>
 											<!-- <p >From Questionnaire of 52 Questions</p> -->
 										</header>
 										<div class="feature-list">
@@ -124,18 +130,21 @@
 									<br>
 									<header margin-bottom: 0;  padding-bottom: 0px; class="style1">
 										<h2>Metrics of Retention</h2>
-										<p >In order to predict retention from the variables, retention must be defined. Traditionally, retention means
-										those who stick with the program; however in this case, it may be considered a good thing if the participant decides to
-									leave the program (they succesfully were able to grow their business and no longer needed support). So we decided to define
-									 retention as those who stick with the program. As "retention" does not have a concrete definition, we experimented with three
-								 ways to define retention, to figure out which definition best described those whose stayed with the Grameen program. Shown bellow
-							 are the three retention metrics. </p>
+										<p >In order to predict retention from the variables, retention must be defined. </br> 
+										We decided to define <b>retention</b> as those who <b>stay with the program</b>. </br>
+										<br>
+										As "retention" does not have a concrete definition, we experimented with <b>three ways</b> to define retention,</br>
+										to figure out which definition best described the <b>members that stayed with the Grameen program</b>. </br>
+										<br>
+										<i>Shown below are the three retention metrics</i>. </p>
 
 									</header>
 
-								<span style="margin-left: 80px" style="color:black"><b style="color:#64caa8">Metric 1:</b> Member is considered not retained if their last loan account is closed and they have not opened a new account within 3 months of their loan end date  (binary category)<br><br></span>
-									<span style="margin-left: 80px" style="color:black"><b style="color:#64caa8">Metric 2:</b>  Member is considered retained if they have more than 2 completed cycles (binary category)<br><br> </span>
-									<span style="margin-left: 80px" style="color:black"><b style="color:#64caa8">Metric 3:</b> There are 3 categories of retention/experience that a member can fall under: <br></span>
+								<span style="margin-left: 80px" style="color:black"><b style="color:#64caa8">Metric 1:</b> Member is considered <b>not retained</b> if their last loan account is <b>closed</b> and they have not opened a new account within <b>3 months</b> of their loan end date</br>
+								<span style="margin-left: 140px" style="color:black">(binary category)<br><br></span>
+									<span style="margin-left: 80px" style="color:black"><b style="color:#64caa8">Metric 2:</b>  Member is considered <b>retained</b> if they have <b>more than 2 completed cycles</b></br>
+									<span style="margin-left: 140px" style="color:black">(binary category)<br><br> </span>
+									<span style="margin-left: 80px" style="color:black"><b style="color:#64caa8">Metric 3:</b> There are <b>3 categories of retention</b> that a member can fall under: <br></span>
 
 									<span style="margin-left: 160px" style="color:black">1.  No Retention --> 0-2 completed loan cycles (~41% of members) <br></span>
 									 <span style="margin-left: 160px" style="color:black">2.  Retention --> 3-9 completed loan cycles (~43% of members)<br></span>
@@ -147,15 +156,23 @@
 
 						     <!-- <div id="includedContent"></div> -->
 								 <header margin-bottom: 0;  padding-bottom: 0px; class="style1">
-								 <p > From our analysis of the above retention metrics, we chose metric 3. In general, Metric 1 produced differing results or no trends, while Metric 2 and 3 produced similar results.
-								 Retention metric 3 had three levels of retention, based on the total number of loan cycles a member has. Because Retention materic 3 showed “levels” of retention, we decided to use metric 3 for the rest of our analysis.</p>
+								 <p > In general, <i>Metric 1</i> produced differing results or no trends, while <i>Metric 2</i> and <i>Metric 3</i> produced similar results.</br>
+								 Retention <i>Metric 3</i> had <b>three levels of retention</b>, based on the <b>total number of loan cycles</b> a member has.</br>
+								 Because Retention <i>Metric 3</i> showed <b>“levels” of retention</b>, we decided to use <b><i>Retention Metric 3</b></i> for the rest of our analysis.</p>
+								 <br>
+								 <br>
 							 </header>
 							 <header margin-bottom: 0;  padding-bottom: 0px; class="style1">
 							 	<h2>Feature Importance Analysis </h2>
-								<p > From a feature importance analysis using XGboost and Random Forest Models we found out that the variable  "running a business before grameen" had a huge
-								feature importance compared to the other features. In other words, whether or not the participants ran a business before coming to Grameen, was a key indicator
-							in predicting their retention. Shown bellow are two pie charts, one for those who answered "Yes" to running a business before Grameen and one for those
-						who answered "No" for running a business before Grameen. The different colors correspond to how long they retained (stayed with) Grameen America. </p>
+								<p > From a <b>feature importance</b> analysis using <i>XGboost</i> and <i>Random Forest</i> Models we found out that the variable</br>
+								<b>"running a business before grameen"</b> had a huge feature importance compared to the other features.</br>
+								<br>
+								In other words, whether or not the member <b>ran a business before coming to Grameen</b>,</br>
+								was a key indicator in <b>predicting their retention</b>.</br>
+								Shown below are two <b>pie charts</b>, one for those who answered <b>"Yes"</b> to running a business before Grameen</br>
+								and one for those who answered <b>"No"</b> for running a business before Grameen.</br>
+								<br>
+								The <b>different colors</b> correspond to how long they were <b>retained (stayed with)</b> Grameen America. </p>
 							</header>
 
 
@@ -163,8 +180,8 @@
 
 								 <header margin-bottom: 0;  padding-bottom: 0px; class="style1">
 									<h2><br><br>Housing Cost</h2>
-									<p >  This following histogram shows the distribution of Grameen America member housing costs grouped by retention 3 metrics.
-										 Members categorized as no retention concentrated towards the $1001-1200 range. </p>
+									<p >  This following histogram shows the distribution of Grameen America member <b>housing costs</b> grouped by <b>Retention Metric 3</b>.
+										 Members categorized as <b>no retention</b> concentrated towards the <b>$1001-1200 range</b>. </p>
 								</header>
 
 								<iframe  width="1200" height="500" src="retention3_housing.html" seamless></iframe>
@@ -172,19 +189,21 @@
 
 								 <header margin-bottom: 0;  padding-bottom: 0px; class="style1">
 									<h2><br><br>Housing Situation</h2>
-									<p > Using Retention Metric 3, here is a graph of the housing situation of the participants in Grameen America. The second graph shows a zoomed in version of
-									the three categories with the lowest bars in the first graph.</p>
+									<p >Using <i>Retention Metric 3</i>, here is a graph of the <b>housing situation</b> of the members of Grameen America.</br>
+									The second graph shows a <b>zoomed in</b> version of the <i>three categories</i> with the <b>lowest bars</b> in the first graph.</p>
 
 								</header>
 								<iframe  width="1200" height="500" src="hist_retention3-housing.html" seamless></iframe>
 								<iframe  width="1200" height="500" src="zoomed_retention3-housing.html" seamless></iframe>
 
-
+								<br>
+								<br>
 								 <header margin-bottom: 0;  padding-bottom: 0px; class="style1">
 									<h2>Branch Analysis</h2>
-									<p > Using Retention Metric 3, here is a graph for the retention based on each branch. Note that just because a bar is low, does not necessarily mean
-										low performance. In further examinatin of the bars that are lower, we learned that many of those branches had just opened, and therefore did not score well
-										in having participants with retention, or long term retention.</p>
+									<p > Using <i>Retention Metric 3</i>, here is a graph for the retention based on each <b>branch</b>.</br>
+									<Nte that just because a <b>bar is low</b>, does not necessarily mean <b>low performance(retention rates)</b>.</br>
+									Upon further examination, we learned that many of those "low bar" branches <b>recently opened</b>,</br>
+									and therefore <b>could not</b> have members with retention or long term retention.</p>
 								</header>
 									<iframe  width="1200" height="500" src="hist_retention3-branch.html" seamless></iframe>
 
