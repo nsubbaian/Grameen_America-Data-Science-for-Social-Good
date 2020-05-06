@@ -1458,7 +1458,9 @@ input, select, textarea {
 	}
 
 	header.style1 {
-		text-align: center;
+		text-align: justify;
+		/* text-align: left; */
+		/* text-justify: inter-word; */
 		padding: 3em 0 3em 0;
 	}
 
